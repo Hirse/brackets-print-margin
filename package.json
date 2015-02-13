@@ -10,10 +10,13 @@
     "author": "Jan Pilzer (https://github.com/Hirse)",
     "license": "MIT",
     "keywords": ["print margin", "page margin", "length", "linelength", "codestyle"],
-    "i18n": ["en", "de"],
+    "i18n": ["en", "de", "it"],
     "package-i18n": {
         "de": {
             "description": "Fügt einen Seitenrand (Print Margin) in den Editor ein, um dem Entwickler zu helfen eine gewünschte maximale Zeilenlänge einzuhalten."
         }
+        "it": {
++ "description": "Aggiunge un margine (Print Manager) nell'editor per aiutare lo sviluppatore ad avere una lunghezza massima desiderata."
++ }
     }
 }
