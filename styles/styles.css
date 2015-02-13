@@ -1,0 +1,44 @@
+.CodeMirror-lines {
+    background-image: url("../img/dot.png");
+    background-position: 120ch 0;
+    background-repeat: repeat-y;
+}
+
+#hirse-print-margin .hidden {
+    display: none;
+}
+
+#print-margin-label,
+#print-margin-column-label {
+    margin-right: 3px;
+}
+
+#print-margin-column-label {
+    cursor: pointer;
+}
+
+#print-margin-column-label:hover {
+    text-decoration: underline;
+}
+
+#print-margin-column-input {
+    color: #333;
+    font-size: 11px;
+    font-weight: 500;
+    height: 13px;
+    left: 0;
+    line-height: 1;
+    margin: 0;
+    padding: 0 3px 2px;
+    position: relative;
+    top: -1px;
+    transition: 0.1s linear all;
+    vertical-align: middle;
+    width: 18px;
+}
+
+#print-margin-column-input::-webkit-inner-spin-button,
+#print-margin-column-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
