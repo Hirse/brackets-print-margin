@@ -1,6 +1,6 @@
 {
     "name": "hirse.print-margin",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "title": "Brackets Print Margin",
     "description": "Adds a print margin line to the editor to helpt you keep your lines of code below a certain length. Easy configuration in the status bar.",
     "engines": {
@@ -14,9 +14,9 @@
     "package-i18n": {
         "de": {
             "description": "Fügt einen Seitenrand (Print Margin) in den Editor ein, um dem Entwickler zu helfen eine gewünschte maximale Zeilenlänge einzuhalten."
-        }
+        },
         "it": {
-+ "description": "Aggiunge un margine (Print Manager) nell'editor per aiutare lo sviluppatore ad avere una lunghezza massima desiderata."
-+ }
+            "description": "Aggiunge un margine (Print Manager) nell'editor per aiutare lo sviluppatore ad avere una lunghezza massima desiderata."
+        }
     }
 }
