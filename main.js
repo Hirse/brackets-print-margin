@@ -3,14 +3,15 @@
 define(function (require, exports, module) {
     "use strict";
 
-    var PreferencesManager = brackets.getModule("preferences/PreferencesManager");
-    var AppInit = brackets.getModule("utils/AppInit");
-    var ExtensionUtils = brackets.getModule("utils/ExtensionUtils");
-    var KeyEvent = brackets.getModule("utils/KeyEvent");
-    var StatusBar = brackets.getModule("widgets/StatusBar");
+    var EditorManager       = brackets.getModule("editor/EditorManager");
+    var PreferencesManager  = brackets.getModule("preferences/PreferencesManager");
+    var AppInit             = brackets.getModule("utils/AppInit");
+    var ExtensionUtils      = brackets.getModule("utils/ExtensionUtils");
+    var KeyEvent            = brackets.getModule("utils/KeyEvent");
+    var StatusBar           = brackets.getModule("widgets/StatusBar");
 
-    var Strings = require("strings");
-    var IndicatorTemplate = require("text!templates/status-bar-indicator.html");
+    var Strings             = require("strings");
+    var IndicatorTemplate   = require("text!templates/status-bar-indicator.html");
 
     ExtensionUtils.loadStyleSheet(module, "styles/styles.css");
 
@@ -22,10 +23,10 @@ define(function (require, exports, module) {
 
     /**
      * Change CSS to display the print margin on the requested column.
-     * @param {Number} column Column number.
+     * The column value is taken directly from the preferences.
      */
-    function _applyPrintMargin(column) {
-        $(".CodeMirror-lines").css("backgroundPosition", column + "ch 0");
+    function _applyPrintMargin() {
+        $(".CodeMirror-lines").css("backgroundPosition", prefs.get("column") + "ch 0");
     }
 
     /**
@@ -41,19 +42,19 @@ define(function (require, exports, module) {
             $indicatorLabel.text(value);
             prefs.set("column", value);
             prefs.save();
-            _applyPrintMargin(value);
+            _applyPrintMargin();
         }
     }
 
     function _init() {
         prefs.definePreference("column", "number", 120);
         prefs.save();
-        var column = prefs.get("column");
-        _applyPrintMargin(column);
+        _applyPrintMargin();
+        $(EditorManager).on("activeEditorChange", _applyPrintMargin);
 
         var $indicator = Mustache.render(IndicatorTemplate, {
             Strings: Strings,
-            column: column
+            column: prefs.get("column")
         });
         $indicator = $($indicator);
         $indicatorLabel = $indicator.children("#print-margin-column-label");
