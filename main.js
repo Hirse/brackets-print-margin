@@ -50,7 +50,7 @@ define(function (require, exports, module) {
         prefs.definePreference("column", "number", 120);
         prefs.save();
         _applyPrintMargin();
-        $(EditorManager).on("activeEditorChange", _applyPrintMargin);
+        EditorManager.on("activeEditorChange", _applyPrintMargin);
 
         var $indicator = Mustache.render(IndicatorTemplate, {
             Strings: Strings,
