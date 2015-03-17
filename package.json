@@ -1,6 +1,6 @@
 {
     "name": "hirse.print-margin",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "title": "Brackets Print Margin",
     "description": "Adds a print margin line to the editor to helpt you keep your lines of code below a certain length. Easy configuration in the status bar.",
     "engines": {
@@ -9,7 +9,8 @@
     "homepage": "https://github.com/Hirse/brackets-print-margin",
     "author": "Jan Pilzer (https://github.com/Hirse)",
     "license": "MIT",
-    "keywords": ["print margin", "page margin", "length", "linelength", "codestyle"],
+    "categories": "editing",
+    "keywords": ["print margin", "page margin", "guide", "column guide", "length", "linelength", "codestyle"],
     "i18n": ["en", "de", "it"],
     "package-i18n": {
         "de": {
