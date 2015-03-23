@@ -4,6 +4,10 @@
     background-repeat: repeat-y;
 }
 
+.dark .CodeMirror-lines {
+    background-image: url("../img/dot-dark.png");
+}
+
 #hirse-print-margin .hidden {
     display: none;
 }
