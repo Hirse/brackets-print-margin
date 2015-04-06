@@ -1,7 +1,7 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
-## Unreleased
+## 0.3.0 - 2015-04-06
 ### Added
 - Darker Line for Brackets Dark Theme
 
