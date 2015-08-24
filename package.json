@@ -10,7 +10,7 @@
     "author": "Jan Pilzer (https://github.com/Hirse)",
     "license": "MIT",
     "categories": "editing",
-    "keywords": ["print margin", "page margin", "guide", "column guide", "length", "linelength", "codestyle"],
+    "keywords": ["print margin", "page margin", "guide", "column guide", "length", "linelength", "codestyle", "marker line"],
     "i18n": ["en", "de", "it"],
     "package-i18n": {
         "de": {
