@@ -1,23 +1,41 @@
 {
-    "name": "hirse.print-margin",
-    "version": "0.3.1",
-    "title": "Brackets Print Margin",
-    "description": "Adds a print margin line to the editor to helpt you keep your lines of code below a certain length. Easy configuration in the status bar.",
-    "engines": {
-        "brackets": ">=1.4.0"
+  "name": "hirse.print-margin",
+  "version": "0.3.1",
+  "title": "Brackets Print Margin",
+  "description": "Adds a print margin line to the editor to helpt you keep your lines of code below a certain length. Easy configuration in the status bar.",
+  "engines": {
+    "brackets": ">=1.4.0"
+  },
+  "homepage": "https://github.com/Hirse/brackets-print-margin",
+  "repository": "Hirse/brackets-print-margin",
+  "author": "Jan Pilzer (https://github.com/Hirse)",
+  "license": "MIT",
+  "categories": "editing",
+  "keywords": [
+    "print margin",
+    "page margin",
+    "guide",
+    "column guide",
+    "length",
+    "linelength",
+    "codestyle",
+    "marker line"
+  ],
+  "i18n": [
+    "en",
+    "de",
+    "it"
+  ],
+  "package-i18n": {
+    "de": {
+      "description": "Fügt einen Seitenrand (Print Margin) in den Editor ein, um dem Entwickler zu helfen eine gewünschte maximale Zeilenlänge einzuhalten."
     },
-    "homepage": "https://github.com/Hirse/brackets-print-margin",
-    "author": "Jan Pilzer (https://github.com/Hirse)",
-    "license": "MIT",
-    "categories": "editing",
-    "keywords": ["print margin", "page margin", "guide", "column guide", "length", "linelength", "codestyle", "marker line"],
-    "i18n": ["en", "de", "it"],
-    "package-i18n": {
-        "de": {
-            "description": "Fügt einen Seitenrand (Print Margin) in den Editor ein, um dem Entwickler zu helfen eine gewünschte maximale Zeilenlänge einzuhalten."
-        },
-        "it": {
-            "description": "Aggiunge un margine (Print Manager) nell'editor per aiutare lo sviluppatore ad avere una lunghezza massima desiderata."
-        }
+    "it": {
+      "description": "Aggiunge un margine (Print Manager) nell'editor per aiutare lo sviluppatore ad avere una lunghezza massima desiderata."
     }
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compress": "^0.13.0"
+  }
 }
