@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.3.1 - 2015-08-24
+### Added
+- Names and Descriptions for preferences
+
+
 ## 0.3.0 - 2015-04-06
 ### Added
 - Darker Line for Brackets Dark Theme

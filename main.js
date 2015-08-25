@@ -1,5 +1,3 @@
-/* global define, brackets, Mustache */
-
 define(function (require, exports, module) {
     "use strict";
 
@@ -47,7 +45,10 @@ define(function (require, exports, module) {
     }
 
     function _init() {
-        prefs.definePreference("column", "number", 120);
+        prefs.definePreference("column", "number", 120, {
+            name: Strings.PREF_COLUMN_NAME,
+            description: Strings.PREF_COLUMN_DESC
+        });
         prefs.save();
         _applyPrintMargin();
         EditorManager.on("activeEditorChange", _applyPrintMargin);
