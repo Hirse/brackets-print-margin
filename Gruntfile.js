@@ -9,6 +9,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         src: [
+                            'img/**',
                             'nls/**',
                             'styles/*',
                             'templates/*',

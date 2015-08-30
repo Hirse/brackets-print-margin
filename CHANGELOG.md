@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.3.2 - 2015-08-30
+### Fixed
+- Included missing image in archive
+
+
 ## 0.3.1 - 2015-08-24
 ### Added
 - Names and Descriptions for preferences
