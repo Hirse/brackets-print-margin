@@ -1,0 +1,10 @@
+extends: eslint:recommended
+env:
+  browser: true
+  jquery: true
+globals:
+  brackets: false
+  define: false
+rules:
+  indent: [warn, 4]
+  quotes: [warn, double]

@@ -1,5 +1,6 @@
-module.exports = function (grunt) {
+/* globals module */
 
+module.exports = function (grunt) {
     grunt.initConfig({
         compress: {
             main: {
