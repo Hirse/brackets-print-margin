@@ -35,9 +35,9 @@
     }
   },
   "devDependencies": {
-    "eslint": "^3.9.1",
-    "grunt": "^0.4.5",
-    "grunt-contrib-compress": "^0.13.0"
+    "eslint": "3.x.x",
+    "grunt": "1.x.x",
+    "grunt-contrib-compress": "1.x.x"
   },
   "scripts": {
     "test": "eslint .",
