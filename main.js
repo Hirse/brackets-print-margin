@@ -3,6 +3,7 @@ define(function (require, exports, module) {
 
     var EditorManager       = brackets.getModule("editor/EditorManager");
     var PreferencesManager  = brackets.getModule("preferences/PreferencesManager");
+    var Mustache            = brackets.getModule("thirdparty/mustache/mustache");
     var AppInit             = brackets.getModule("utils/AppInit");
     var ExtensionUtils      = brackets.getModule("utils/ExtensionUtils");
     var KeyEvent            = brackets.getModule("utils/KeyEvent");

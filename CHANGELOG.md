@@ -1,6 +1,11 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+## 0.4.0 - 2016-11-11
+### Changed
+- Update to Brackets 1.8 API
+
+
 ## 0.3.2 - 2015-08-30
 ### Fixed
 - Included missing image in archive
