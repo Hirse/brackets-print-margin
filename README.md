@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Hirse/brackets-print-margin.svg?branch=master)](https://travis-ci.org/Hirse/brackets-print-margin)
+
 # Brackets Print Margin
 [Brackets](http://brackets.io) Extension to add a print margin line to the editor to help you keep your lines of code below a certain length. Easy configuration in the status bar.
 
